@@ -16,37 +16,37 @@
 					<div class="form-group">
 						<label class="title">Nama</label>
             			<div class="control">
-							<input value="<?=$data->nama;?>" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
+							<input value="" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="title">Alamat</label>
             			<div class="control">
-							<input value="<?=$data->alamat;?>" type="text" name="alamat" class="inputbox" placeholder="Alamat" size="40">
+							<input value="" type="text" name="alamat" class="inputbox" placeholder="Alamat" size="40">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="title">Kota</label>
             			<div class="control">
-							<input value="<?=$data->kota;?>" type="text" name="kota" class="inputbox" placeholder="Kota" size="40">
+							<input value="" type="text" name="kota" class="inputbox" placeholder="Kota" size="40">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="title">Provinsi</label>
             			<div class="control">
-							<input value="<?=$data->provinsi;?>" type="text" name="provinsi" class="inputbox" placeholder="Provinsi" size="40">
+							<input value="" type="text" name="provinsi" class="inputbox" placeholder="Provinsi" size="40">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="title">Kode Pos</label>
             			<div class="control">
-							<input value="<?=$data->kode_pos;?>" type="text" name="kode_pos" class="inputbox" placeholder="Kode Pos" size="40">
+							<input value="" type="text" name="kode_pos" class="inputbox" placeholder="Kode Pos" size="40">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="title">No HP</label>
             			<div class="control">
-							<input value="<?=$data->no_hp;?>" type="text" name="no_hp" class="inputbox" placeholder="No HP" size="40">
+							<input value="" type="text" name="no_hp" class="inputbox" placeholder="No HP" size="40">
 						</div>
 					</div>
 

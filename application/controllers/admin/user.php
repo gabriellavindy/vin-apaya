@@ -31,7 +31,7 @@ class User extends CI_Controller {
 		$this->admin_user->fill_form_edit_data($id,$this->data);
 		$this->data['form_action']		= site_url("admin/user/edit_process/{$id}");
 		$this->data['back_url']			= site_url("admin/user");
-		$this->data['content']			= 'backend/user/form';
+		$this->data['content']			= 'backend/user/form_edit';
 		$this->load->view('backend/template/home', $this->data);
 	}
 	

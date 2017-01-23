@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/elegant-font/code/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/css/button.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/css/animate.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/css/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>static/pages/css/form-elements.css">
@@ -58,27 +59,29 @@
                 <div class="row">
                     <div class="col-sm-4 contact-form">
                         <h4>Email Us</h4>
-                        <form role="form" action="static/contact.php" method="post">
+                        <form role="form" action="home/add_pesan" method="post">
                             <div class="form-group">
                                 <label class="sr-only" for="contact-email">Email</label>
                                 <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="contact-subject">Subject</label>
-                                <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                                <label class="sr-only" for="contact-subjek">Subject</label>
+                                <input type="text" name="subjek" placeholder="Subject..." class="contact-subjek form-control" id="contact-subjek">
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="contact-message">Message</label>
-                                <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                                <label class="sr-only" for="contact-pesan">Message</label>
+                                <textarea name="pesan" placeholder="Message..." class="contact-pesan form-control" id="contact-pesan"></textarea>
                             </div>
                             <button type="submit" class="btn">Send</button>
                         </form>
                     </div>
-                    <div class="col-sm-4 contact-address wow fadeInUp">
+                    <div class="col-sm-4 contact-address">
                         <h4>Visit us</h4>
-                        <p><span aria-hidden="true" class="icon_pin"></span>Universitas Mercu Buana Yogyakarta</p>
-                        <p><span aria-hidden="true" class="icon_phone"></span>Phone: 0857 4924 4294</p>
-                        <p><span aria-hidden="true" class="icon_mail"></span>Email: <a href="">apaya@gmail.com</a></p>
+                        <div>
+                            <p><span aria-hidden="true" class="icon_pin"></span>Universitas Mercu Buana Yogyakarta</p>
+                            <p><span aria-hidden="true" class="icon_phone"></span>Phone: +62 857 4924 4294</p>
+                            <p><span aria-hidden="true" class="icon_mail"></span>Email: <a href="">info@apaya.com</a></p>
+                        </div>
                     </div>
                     <div class="col-sm-4">   
                         <h4>Social Media</h4>

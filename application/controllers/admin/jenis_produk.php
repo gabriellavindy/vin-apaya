@@ -6,7 +6,7 @@ class Jenis_produk extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->data['userdata']			= $this->session->userdata('userdata');
-		// if($this->data['produkdata']->id_grup != 1){
+		// if($this->data['userdata']->id_grup != 1){
 		// 	redirect('admin/logout');
 		// }
 		
@@ -20,7 +20,6 @@ class Jenis_produk extends CI_Controller {
 	}
 		
 	function add(){
-		$this->admin_jenis_produk->fill_form_add_data($this->data);
 		$this->data['form_action']		= site_url("admin/jenis_produk/add_process");
 		$this->data['back_url']			= site_url("admin/jenis_produk");
 		$this->data['content']			= 'backend/jenis_produk/form';
@@ -31,7 +30,7 @@ class Jenis_produk extends CI_Controller {
 		$this->admin_jenis_produk->fill_form_edit_data($id,$this->data);
 		$this->data['form_action']		= site_url("admin/jenis_produk/edit_process/{$id}");
 		$this->data['back_url']			= site_url("admin/jenis_produk");
-		$this->data['content']			= 'backend/jenis_produk/form';
+		$this->data['content']			= 'backend/jenis_produk/form_edit';
 		$this->load->view('backend/template/home', $this->data);
 	}
 	

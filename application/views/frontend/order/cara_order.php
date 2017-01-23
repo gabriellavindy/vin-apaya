@@ -1,6 +1,6 @@
 <div id="body" class="width">
 	<section id="content" class="one-column">
-	    <article>
+	    <article class="info">
 			<h3>CARA PEMESANAN</h3>
 			<p>Pemesanan produk pada Apaya.com dapat dilakukan dengan langkah-langkah mudah, yaitu:</p>
             

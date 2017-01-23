@@ -10,9 +10,6 @@ class Admin_customer_model extends CI_Model{
 		$data['data_list']			= $this->customer->GetDataList();
 	}
 	
-	public function fill_form_add_data(&$data){
-	}
-	
 	public function fill_form_edit_data($id,&$data){
 		$data['data']				= $this->customer->GetDataById($id);
 	}

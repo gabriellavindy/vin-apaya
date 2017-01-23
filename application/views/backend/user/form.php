@@ -19,7 +19,7 @@
 							<select name="id_grup" id="id_grup" class="form-control" data-placeholder="Pilih Grup" style="width:270px;">
 								<option value="">-- Pilih Grup --</option>
 								<?php foreach($user_grup_list as $user_grup){?>
-									<option value="<?=$user_grup->id;?>" <?=$user_grup->id==$data->id_grup ? 'selected' : '';?>><?=$user_grup->nama;?></option>
+									<option value="<?=$user_grup->id;?>"><?=$user_grup->nama;?></option>
 								<?php } ?>
 							</select>
 						</div>
@@ -27,7 +27,7 @@
 					<div class="form-group">
 						<label class="title">Username</label>
             			<div class="control">
-							<input value="<?=$data->username;?>" type="text" name="username" class="inputbox" placeholder="Username" size="40">
+							<input value="" type="text" name="username" class="inputbox" placeholder="Username" size="40">
 						</div>
 					</div>
 					<div class="form-group">
@@ -45,7 +45,7 @@
 					<div class="form-group">
 						<label class="title">Nama</label>
             			<div class="control">
-							<input value="<?=$data->nama;?>" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
+							<input value="" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
 						</div>
 					</div>
 

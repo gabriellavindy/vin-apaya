@@ -1,83 +1,41 @@
+<div id="about">
+    <div class="width">
+        <div class="about-content">
+        </div>
+    </div>
+</div>
 <div id="body" class="width">
-    <aside class="sidebar big-sidebar left-sidebar">
-        <ul>	
-           <li><h4>Categories</h4>
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="examples.html">Style Examples</a>
-            			<ul>
-            				<li><a href="three-column.html">Three Column</a></li>
-            				<li><a href="one-column.html">One column / no sidebar</a></li>
-            				<li><a class="selected" href="text.html">Text / left sidebar</a></li>
-            			</ul>
-            		</li>
-                    <li><a href="three-column.html">Three column layout example</a></li>
-                    <li><a href="#">Sed aliquam libero ut velit bibendum</a></li>
-                    <li><a href="#">Maecenas condimentum velit vitae</a></li>
-                </ul>
-            </li>
+    <section id="content" class="one-column">
+        <article class="info text-center">
+            <h3>TENTANG KAMI</h3>
+            <p>Apaya adalah sebuah layanan untuk mencetak foto-foto milik Anda dalam bentuk yang lebih menarik. Apaya merupakan karya asli anak Indonesia, yang memudahkan Anda mencetak foto-foto dari media sosial (Instagram dan Facebook) atau dari gadget Anda hanya dengan beberapa langkah saja.</p>
+            Apaya juga memungkinkan Anda untuk mengupload foto dari komputer (yang mungkin bersifat lebih privasi), sehingga Anda tidak perlu mempublikasikan secara bebas ke jejaring sosial foto. Kami menyediakan beberapa media cetak foto yang dapat Anda pilih sesuai keinginan, yang kami kemas dalam produk yang sangat menarik.<br/><br/>
+            Seluruh pemrosesan foto dilakukan secara otomatis menggunakan program khusus, sehingga dapat diproses dengan cepat dan dapat meminimalisir kesalahan manusia / staff kami.
             
-            <li class="bg">
-                <h4>About us</h4>
-                <ul>
-                    <li class="text">
-                    	<p style="margin: 0;">Aenean nec massa a tortor auctor sodales sed a dolor. Duis vitae lorem sem. Proin at velit vel arcu pretium luctus. 					<a href="#" class="readmore">Read More &raquo;</a></p>
-                    </li>
-                </ul>
-            </li>
-            
-            <li>
-            	<h4>Search site</h4>
-                <ul>
-                	<li class="text">
-                        <form method="get" class="searchform" action="#" >
-                            <p>
-                                <input type="text" size="32" value="" name="s" class="s" />
-                                
-                            </p>
-                        </form>	
-					</li>
-				</ul>
-            </li>
-            
-            <li>
-                <h4>Helpful Links</h4>
-                <ul>
-                    <li><a href="http://www.themeforest.net/?ref=spykawg" title="premium templates">Premium HTML web templates from $10</a></li>
-                    <li><a href="http://www.dreamhost.com/r.cgi?259541" title="web hosting">Cheap web hosting from Dreamhost</a></li>
-                    <li><a href="http://tuxthemes.com" title="Tux Themes">Premium WordPress themes</a></li>
-                </ul>
-            </li>
-        </ul>
-    </aside>
+            <br/><br/><br/><br/><br/>
+            <h3>KONTAK</h3>
+            <p>Jika Anda ingin memberikan saran atau kritik pada Apaya, silakan hubungi kami melalui alamat yang tersedia di bawah ini.</p>
+            <div class="row">
+                <div class="col-sm-4" style="text-align: left">
+                    Alamat: <br/>
+                    <h5>Universitas Mercu Buana Yogyakarta</h5>
+                </div>
+                <div class="col-sm-4" style="text-align: left">
+                    Telepon / WhatsApp: <br/>
+                    <h5>+62 857 4924 4294 </h5><br/>
+                    Email: <br/>
+                    <h5>info@apaya.com </h5><br/>
+                    Social Media: <br/>
+                    <div class="social-icons-small">
+                        <a href="https://www.facebook.com/apaya"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com/apaya"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="https://instagram.com/apaya"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="//blog.apaya.com"><i class="fa fa-tumblr fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
 
-	<section id="content" class="two-column with-left-sidebar">
-	    <article>
-			<h2>Introduction to spark</h2>
-			<div class="article-info">Posted on <time datetime="2013-05-14">14 May</time> by <a href="#" rel="author">Joe Bloggs</a></div>
-            <p>Welcome to spark, a free valid CSS3 &amp; HTML5 responsive web template from <a href="http://zypopwebtemplates.com/" title="ZyPOP">ZyPOP</a>. This template is completely <strong>free</strong> to use permitting a link remains back to  <a href="http://zypopwebtemplates.com/" title="ZyPOP">http://zypopwebtemplates.com/</a>.</p>
-            <p> Should you wish to use this template unbranded you can buy a template license from our website for 8.00 GBP, this will allow you remove all branding related to our site, for more information about this see below.</p>	
-            <p>The image in the header is in the public domain, downloaded from <a href="http://unsplash.com/">UnSplash</a></p>
-            <p>This template has been tested in:</p>
-
-            <ul class="styledlist">
-                <li>Firefox</li>
-                <li>IE</li>
-                <li>Safari</li>
-                <li>Chrome</li>
-            </ul>
-    		<a href="#" class="button">Read more</a>
-    		<a href="#" class="button button-reversed">Comments</a>
-		</article>
-		<article class="expanded">
-            <h2>Buy unbranded</h2>
-			<div class="article-info">Posted on <time datetime="2013-05-14">14 May</time> by <a href="#" rel="author">Joe Bloggs</a></div>
-            <p>Purchasing a template license for 8.00 GBP (at time of writing around 12 USD) gives you the right to remove any branding including links, logos and source tags relating to ZyPOP. As well as waiving the attribution requirement, your payment will also help us provide continued support for users as well as creating new web templates. Find out more about how to buy at the licensing page on our website which can be accessed at <a href="http://zypopwebtemplates.com/licensing" title="template license">http://zypopwebtemplates.com/licensing</a></p>
-            <h3>Lorem lipsum</h3>
-            <p>Morbi fermentum condimentum felis, commodo vestibulum sem mattis sed. Aliquam magna ante, mollis vitae tincidunt in, malesuada vitae turpis. Sed aliquam libero ut velit bibendum consectetur. Quisque sagittis, est in laoreet semper, enim dui consequat felis, faucibus ornare urna velit nec leo. Maecenas condimentum velit vitae est lobortis fermentum. In tristique sem vitae metus ornare luctus tempus nisl volutpat. Integer et est id nisi tempus pharetra sagittis et libero.</p>
-            <a href="#" class="button">Read more</a>
-    		<a href="#" class="button button-reversed">Comments</a>
-		</article>
-    </section> 
-	<div class="clear"></div>
+        </article>
+    </section>
+    <div class="clear"></div>
 </div>

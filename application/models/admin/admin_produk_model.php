@@ -12,20 +12,20 @@ class Admin_produk_model extends CI_Model{
 	
 	public function fill_form_add_data(&$data){
 		$data['kualitas_list']		= $this->produk->GetKualitasList();
-		$data['type_foto_list']		= $this->produk->GetTypeList();
+		$data['jenis_produk_list']	= $this->produk->GetJenisList();
 	}
 	
 	public function fill_form_edit_data($id,&$data){
 		$data['kualitas_list']		= $this->produk->GetKualitasList();
-		$data['type_foto_list']		= $this->produk->GetTypeList();
+		$data['jenis_produk_list']	= $this->produk->GetJenisList();
 		$data['data']				= $this->produk->GetDataById($id);
 	}
 	
 	public function add(){
 		$data 	= array('nama' 			=> trim($this->input->post('nama')),
-						'harga' 		=> $this->input->post('harga'),
+						'harga' 		=> $this->angka->rp2num($this->input->post('harga')),
 						'id_kualitas'	=> $this->input->post('id_kualitas'),
-						'id_type'		=> $this->input->post('id_type'),
+						'id_jenis'		=> $this->input->post('id_jenis'),
 						'keterangan'	=> trim($this->input->post('keterangan')));
 		
 		if($this->produk->add($data)){
@@ -37,9 +37,9 @@ class Admin_produk_model extends CI_Model{
 	
 	public function edit($id){
 		$data 	= array('nama' 			=> trim($this->input->post('nama')),
-						'harga' 		=> $this->input->post('harga'),
+						'harga' 		=> $this->angka->rp2num($this->input->post('harga')),
 						'id_kualitas'	=> $this->input->post('id_kualitas'),
-						'id_type'		=> $this->input->post('id_type'),
+						'id_jenis'		=> $this->input->post('id_jenis'),
 						'keterangan'	=> trim($this->input->post('keterangan')));
 
 		if($this->produk->edit($id,$data)){

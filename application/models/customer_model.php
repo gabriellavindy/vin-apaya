@@ -20,6 +20,11 @@ class Customer_model extends CI_Model {
         return($this->db->get_where('data_customer', array('id'=>$id))->row());
     }
         
+    public function GetLastId(){
+        $this->db->select('max(id) as id');
+        return($this->db->get('data_customer')->row()->id);
+    }
+        
     public function CekDataExists($except_id){
         if($except_id!=''){
             $this->db->where('id !=', $except_id);

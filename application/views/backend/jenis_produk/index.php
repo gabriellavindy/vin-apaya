@@ -35,7 +35,8 @@
                                 <tr>
                                     <th width="5px" align="center">No</th>
                                     <th width="30px">Aksi</th>
-                                    <th>Nama</th>
+                                    <th width="100px">Nama</th>
+                                    <th>Keterangan</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -49,11 +50,12 @@
                                                 <a href="<?=site_url("admin/jenis_produk/delete/{$data->id}");?>" class="tiptip dialog confirm" title="Delete" data-title="Konfirmasi Delete" data-modal="true" data-message="Apakah Anda Yakin ingin menghapus produk ini?"><i class="fa fa-trash-o"></i></a>
                                             </td>
                                             <td><?=$data->nama;?></td>
+                                            <td><?=$data->keterangan;?></td>
                                         </tr>
                                     <?php } ?>
                                 <?php }else{ ?>
                                     <tr>
-                                        <td colspan="3">Tidak ada data</td>
+                                        <td colspan="4">Tidak ada data</td>
                                     </tr>
                                 <?php } ?>
                             </tbody>

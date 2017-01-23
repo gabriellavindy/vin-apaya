@@ -16,13 +16,13 @@
 					<div class="form-group">
 						<label class="title">Nama</label>
             			<div class="control">
-							<input value="<?=$data->nama;?>" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
+							<input value="" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="title">Harga</label>
             			<div class="control">
-							<input value="<?=$data->harga;?>" type="text" name="harga" class="inputbox" placeholder="Harga" size="40">
+							<input value="Rp. <?=$this->angka->rp();?>" type="text" name="harga" class="inputbox" placeholder="Harga" size="40">
 						</div>
 					</div>
 					<div class="form-group">
@@ -31,18 +31,18 @@
 							<select name="id_kualitas" id="id_kualitas" class="form-control" data-placeholder="Pilih Kualitas" style="width:270px;">
 								<option value="">-- Pilih Kualitas --</option>
 								<?php foreach($kualitas_list as $kualitas){?>
-									<option value="<?=$kualitas->id;?>" <?=$kualitas->id==$data->id_kualitas ? 'selected' : '';?>><?=$kualitas->nama;?></option>
+									<option value="<?=$kualitas->id;?>"><?=$kualitas->nama;?></option>
 								<?php } ?>
 							</select>
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="title">Type Foto</label>
+						<label class="title">Jenis Produk</label>
             			<div class="control">
-							<select name="id_type" id="id_type" class="form-control" data-placeholder="Pilih Type" style="width:270px;">
-								<option value="">-- Pilih Type --</option>
-								<?php foreach($type_foto_list as $type_foto){?>
-									<option value="<?=$type_foto->id;?>" <?=$type_foto->id==$data->id_type ? 'selected' : '';?>><?=$type_foto->nama;?></option>
+							<select name="id_jenis" id="id_jenis" class="form-control" data-placeholder="Pilih Jenis Produk" style="width:270px;">
+								<option value="">-- Pilih Jenis Produk --</option>
+								<?php foreach($jenis_produk_list as $jenis_produk){?>
+									<option value="<?=$jenis_produk->id;?>"><?=$jenis_produk->nama;?></option>
 								<?php } ?>
 							</select>
 						</div>
@@ -50,7 +50,7 @@
 					<div class="form-group">
 						<label class="title">Keterangan</label>
             			<div class="control">
-							<textarea name="keterangan" class="inputbox" placeholder="Keterangan" rows="3" style="width:270px;"><?=$data->keterangan;?></textarea>
+							<textarea name="keterangan" class="inputbox" placeholder="Keterangan" rows="3" style="width:270px;"></textarea>
 						</div>
 					</div>
 

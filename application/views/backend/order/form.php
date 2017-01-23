@@ -1,9 +1,9 @@
 <div class="content-wrapper">
 	<section class="content-header">
-        <h1>Jenis Produk Form</h1>
+        <h1>Pesanan Form</h1>
         <ol class="breadcrumb">
             <li><a href="<?=site_url('admin/dashboard') ?>"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="<?=site_url('admin/order') ?>"> Order</a></li>
+            <li><a href="<?=site_url('admin/order') ?>"> Pesanan</a></li>
             <li class="active"> Form</li>
         </ol>
 	</section>
@@ -19,7 +19,7 @@
 							<select name="id_user" id="id_user" class="form-control" data-placeholder="Pilih User" style="width:270px;">
 								<option value="">-- Pilih User --</option>
 								<?php foreach($user_list as $user){?>
-									<option value="<?=$user->id;?>" <?=$user->id==$data->id_user ? 'selected' : '';?>><?=$user->nama;?></option>
+									<option value="<?=$user->id;?>"><?=$user->nama;?></option>
 								<?php } ?>
 							</select>
 						</div>
@@ -30,7 +30,7 @@
 							<select name="id_customer" id="id_customer" class="form-control" data-placeholder="Pilih Customer" style="width:270px;">
 								<option value="">-- Pilih Customer --</option>
 								<?php foreach($customer_list as $customer){?>
-									<option value="<?=$customer->id;?>" <?=$customer->id==$data->id_customer ? 'selected' : '';?>><?=$customer->nama;?></option>
+									<option value="<?=$customer->id;?>"><?=$customer->nama;?></option>
 								<?php } ?>
 							</select>
 						</div>
@@ -41,7 +41,18 @@
 							<select name="id_produk" id="id_produk" class="form-control" data-placeholder="Pilih Produk" style="width:270px;">
 								<option value="">-- Pilih Produk --</option>
 								<?php foreach($produk_list as $produk){?>
-									<option value="<?=$produk->id;?>" <?=$produk->id==$data->id_produk ? 'selected' : '';?>><?=$produk->nama;?></option>
+									<option value="<?=$produk->id;?>"><?=$produk->nama;?></option>
+								<?php } ?>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="title">Type Foto</label>
+            			<div class="control">
+							<select name="id_type" id="id_type" class="form-control" data-placeholder="Pilih Type" style="width:270px;">
+								<option value="">-- Pilih Type --</option>
+								<?php foreach($type_foto_list as $type_foto){?>
+									<option value="<?=$type_foto->id;?>"><?=$type_foto->nama;?></option>
 								<?php } ?>
 							</select>
 						</div>
@@ -49,13 +60,13 @@
 					<div class="form-group">
 						<label class="title">Tanggal Pemesanan</label>
             			<div class="control">
-							<input type="text" class="form-control" id="tgl_order" value="<?=$data->tanggal_order?>" style="width:270px;">
+							<input type="text" class="form-control" id="tgl_order" value="" style="width:270px;">
 		                </div>
 					</div>
 					<div class="form-group">
 						<label class="title">Tanggal Konfirmasi</label>
             			<div class="control">
-							<input type="text" class="form-control" id="tgl_konfirm" value="<?=$data->tanggal_konfirmasi?>" style="width:270px;">
+							<input type="text" class="form-control" id="tgl_konfirm" value="" style="width:270px;">
 		                </div>
 					</div>
 

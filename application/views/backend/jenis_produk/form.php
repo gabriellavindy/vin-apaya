@@ -16,7 +16,13 @@
 					<div class="form-group">
 						<label class="title">Nama</label>
             			<div class="control">
-							<input value="<?=$data->nama;?>" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
+							<input value="" type="text" name="nama" class="inputbox" placeholder="Nama" size="40">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="title">Keterangan</label>
+            			<div class="control">
+							<textarea name="keterangan" class="inputbox" placeholder="Keterangan" rows="3" style="width:270px;"></textarea>
 						</div>
 					</div>
 

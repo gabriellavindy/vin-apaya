@@ -6,7 +6,7 @@ class Customer extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->data['userdata']			= $this->session->userdata('userdata');
-		// if($this->data['produkdata']->id_grup != 1){
+		// if($this->data['userdata']->id_grup != 1){
 		// 	redirect('admin/logout');
 		// }
 		
@@ -21,7 +21,6 @@ class Customer extends CI_Controller {
 	}
 		
 	function add(){
-		$this->admin_customer->fill_form_add_data($this->data);
 		$this->data['form_action']		= site_url("admin/customer/add_process");
 		$this->data['back_url']			= site_url("admin/customer");
 		$this->data['content']			= 'backend/customer/form';
@@ -32,7 +31,7 @@ class Customer extends CI_Controller {
 		$this->admin_customer->fill_form_edit_data($id,$this->data);
 		$this->data['form_action']		= site_url("admin/customer/edit_process/{$id}");
 		$this->data['back_url']			= site_url("admin/customer");
-		$this->data['content']			= 'backend/customer/form';
+		$this->data['content']			= 'backend/customer/form_edit';
 		$this->load->view('backend/template/home', $this->data);
 	}
 	

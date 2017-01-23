@@ -37,7 +37,7 @@
                                     <th width="30px">Aksi</th>
                                     <th>Nama</th>
                                     <th>Harga</th>
-                                    <th>Type Foto</th>
+                                    <th style="white-space:nowrap;">Jenis Produk</th>
                                     <th>Keterangan</th>
                                 </tr>
                             </thead>
@@ -52,8 +52,8 @@
                                                 <a href="<?=site_url("admin/produk/delete/{$data->id}");?>" class="tiptip dialog confirm" title="Delete" data-title="Konfirmasi Delete" data-modal="true" data-message="Apakah Anda Yakin ingin menghapus produk ini?"><i class="fa fa-trash-o"></i></a>
                                             </td>
                                             <td><?=$data->nama;?></td>
-                                            <td><?=$data->harga;?></td>
-                                            <td><?=$data->type_foto;?></td>
+                                            <td style="white-space:nowrap;">Rp. <?=$this->angka->rp($data->harga);?></td>
+                                            <td><?=$data->nama_jenis;?></td>
                                             <td><?=$data->keterangan;?></td>
                                         </tr>
                                     <?php } ?>

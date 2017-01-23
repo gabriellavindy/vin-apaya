@@ -1,0 +1,155 @@
+.btn{
+    display:inline-block;
+    position: relative;
+    padding:6px 12px;
+    margin:0;
+    font: bold 12px/normal 'lucida grande', tahoma, verdana, arial, sans-serif!important;
+    color:#333;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-image: none;
+    border:1px solid transparant;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    zoom:1;
+    /*text-shadow:0px 1px 1px rgba(255, 255, 255, 0.75);*/
+    text-decoration:none;
+    outline:none;
+    white-space: nowrap;
+    display: inline/9; 
+}
+.btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+.group{
+    display:inline-block;
+    margin-right:5px;
+}
+.group .btn,
+.btn.inline{
+    margin-left:-6px;
+    border-radius:0 3px 3px 0;
+    -moz-border-radius:0 3px 3px 0;
+    -webkit-border-radius:0 3px 3px 0;
+}
+.btn-group{
+    position: relative;
+    display:inline-block;
+    vertical-align: middle;
+}
+.btn-sm{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn:active{
+    color:#333;
+	text-decoration:none;
+	background:#e6e6e6;
+    z-index:10;
+}
+.btn-transparant-white{
+    color:#fff;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+.btn-primary-dark-green{
+    color: #fff;
+    background-color: #36474f;
+    border-color: #2c3940;
+}
+.btn.green{
+    background-color: #2bbb68;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2ecc71), to(#2bbb68));
+    background-image: -moz-linear-gradient(#2ecc71, #2bbb68);
+    background-image: -o-linear-gradient(#2ecc71, #2bbb68);
+    background-image: linear-gradient(#2ecc71, #2bbb68);
+    border:1px solid #1fa658;
+    color:#fff;
+    text-shadow:0px -1px 0px #4a8844;
+}
+.btn.green:active{
+	background:#2bbb68;
+}
+.btn.red{
+    background-color: #ab3428;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c0392b), to(#ab3428));
+    background-image: -moz-linear-gradient(#c0392b, #ab3428);
+    background-image: -o-linear-gradient(#c0392b, #ab3428);
+    background-image: linear-gradient(#c0392b, #ab3428);
+    border:1px solid #972d22;
+    color:#fff!important;
+    text-shadow:0px -1px 0px #b03a37;
+}
+.btn.red:active{
+	background:#ab3428;
+}
+.btn.blue{
+    background-color: #2f89c5;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3498db), to(#2f89c5));
+    background-image: -moz-linear-gradient(#3498db, #2f89c5);
+    background-image: -o-linear-gradient(#3498db, #2f89c5);
+    background-image: linear-gradient(#3498db, #2f89c5);
+    border:1px solid #2a7bb1;
+    color:#fff;
+    text-shadow:0px -1px 0px #37839a;
+}
+.btn.blue:active{
+	background:#2f89c5;
+}
+.btn.yellow{
+    background-color: #dcb30d;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f1c40f), to(#dcb30d));
+    background-image: -moz-linear-gradient(#f1c40f, #dcb30d);
+    background-image: -o-linear-gradient(#f1c40f, #dcb30d);
+    background-image: linear-gradient(#f1c40f, #dcb30d);
+    border:1px solid #c6a10a;
+    color:#fff;
+    text-shadow:0px -1px 0px #c6a10a;
+}
+.btn.yellow:active{
+    background: #dcb30d;
+}
+.btn.dark{
+    background-color: #23303e;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2c3e50), to(#23303e));
+    background-image: -moz-linear-gradient(#2c3e50, #23303e);
+    background-image: -o-linear-gradient(#2c3e50, #23303e);
+    background-image: linear-gradient(#2c3e50, #23303e);
+    border:1px solid #19222c;
+    color:#fff;
+    text-shadow:0px -1px 0px #303030;
+}
+.btn.dark:active{
+    background: #23303e;
+}
+.btn.disabled{
+    background: #f0f0f0!important;
+    border:1px solid #ddd!important;
+    color:#ccc!important;
+    cursor:default;
+    text-shadow:0px 0px 0px #e6e6e6!important;
+}
+.btn.disabled .ui-icon{
+    background-image:url(images/ui-icons_ffffff_256x240.png);
+}
+.btn.active{
+    background: #ddd!important;
+    border:1px solid #ccc!important;
+    color:#555!important;
+    text-shadow:0px 0px 0px #e6e6e6!important;
+    box-shadow:inset 0px 0px 3px rgba(0,0,0,0.1);
+}
+.btn.block{
+    display: block;
+}
+button.btn.block{
+    width: 100%;
+}
+.btn.icon-only{
+    padding:6px 6px 5px;
+}

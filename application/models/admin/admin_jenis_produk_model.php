@@ -10,15 +10,13 @@ class Admin_jenis_produk_model extends CI_Model{
 		$data['data_list']			= $this->jenis_produk->GetDataList();
 	}
 	
-	public function fill_form_add_data(&$data){
-	}
-	
 	public function fill_form_edit_data($id,&$data){
 		$data['data']				= $this->jenis_produk->GetDataById($id);
 	}
 	
 	public function add(){
-		$data 	= array('nama'		=> trim($this->input->post('nama')));
+		$data 	= array('nama'			=> trim($this->input->post('nama')),
+						'keterangan'	=> trim($this->input->post('keterangan')));
 		
 		if($this->jenis_produk->add($data)){
 			$this->notif->set_notif('success');
@@ -28,7 +26,8 @@ class Admin_jenis_produk_model extends CI_Model{
 	}
 	
 	public function edit($id){
-		$data 	= array('nama'		=> trim($this->input->post('nama')));
+		$data 	= array('nama'			=> trim($this->input->post('nama')),
+						'keterangan'	=> trim($this->input->post('keterangan')));
 
 		if($this->jenis_produk->edit($id,$data)){
 			$this->notif->set_notif('success');

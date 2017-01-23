@@ -12,10 +12,35 @@ class Produk_model extends CI_Model {
     public function GetDataList(){
         $this->db->select('produk.*');
         $this->db->select('kualitas.nama as nama_kualitas');
-        $this->db->select('type_foto.nama as type_foto');
+        $this->db->select('jenis_produk.nama as nama_jenis');
         $this->db->join('kualitas', 'kualitas.id=produk.id_kualitas', 'left');
-        $this->db->join('type_foto', 'type_foto.id=produk.id_type', 'left');
+        $this->db->join('jenis_produk', 'jenis_produk.id=produk.id_jenis', 'left');
         $data = $this->db->get('produk')->result();
+        
+        return($data);
+    }
+    
+    public function GetDataByJenis($id_jenis){
+        $this->db->select('produk.*');
+        $this->db->select('kualitas.nama as nama_kualitas');
+        $this->db->select('jenis_produk.id as id_jenis, jenis_produk.nama as nama_jenis');
+        $this->db->join('kualitas', 'kualitas.id=produk.id_kualitas', 'left');
+        $this->db->join('jenis_produk', 'jenis_produk.id=produk.id_jenis', 'left');
+        $this->db->where('id_jenis', $id_jenis);
+        $data = $this->db->get('produk')->result();
+        
+        return($data);
+    }
+    
+    public function GetDataByKualitas($id_jenis, $id_kualitas=null){
+        $this->db->select('produk.*');
+        $this->db->select('kualitas.nama as nama_kualitas');
+        $this->db->select('jenis_produk.id as id_jenis, jenis_produk.nama as nama_jenis');
+        $this->db->join('kualitas', 'kualitas.id=produk.id_kualitas', 'left');
+        $this->db->join('jenis_produk', 'jenis_produk.id=produk.id_jenis', 'left');
+        $this->db->where('id_jenis', $id_jenis);
+        $this->db->where('id_kualitas', $id_kualitas);
+        $data = $this->db->get('produk')->row();
         
         return($data);
     }
@@ -24,8 +49,8 @@ class Produk_model extends CI_Model {
         return($this->db->order_by('nama','asc')->get('kualitas')->result());
     }
         
-    public function GetTypeList(){
-        return($this->db->order_by('nama','asc')->get('type_foto')->result());
+    public function GetJenisList(){
+        return($this->db->order_by('nama','asc')->get('jenis_produk')->result());
     }
         
     public function GetDataById($id){
